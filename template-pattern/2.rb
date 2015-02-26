@@ -34,7 +34,9 @@ class Report
 end
 
 report = Report.new
+
 puts "************ Text Report ***********"
 report.output_report(:plain)
+
 puts "\n\n************ HTML Report ***********"
 report.output_report(:html)
