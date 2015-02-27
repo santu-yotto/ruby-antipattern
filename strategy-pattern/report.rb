@@ -1,3 +1,4 @@
+require_relative 'formatter'
 class Report
 
   attr_reader :title, :text
@@ -13,3 +14,10 @@ class Report
     @formatter.output_report( @title, @text )
   end
 end
+
+report = Report.new(HTMLFormatter.new)
+report.output_report
+
+report = Report.new(PlainTextFormatter.new)
+report.output_report
+
