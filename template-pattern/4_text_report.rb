@@ -1,3 +1,4 @@
+require_relative '4_report'
 class PlainTextReport < Report
 
   

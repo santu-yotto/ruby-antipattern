@@ -1,3 +1,4 @@
+require_relative '3_report'
 class PlainTextReport < Report
 
   def output_start
