@@ -1,4 +1,4 @@
-require_relative '3_report'
+require_relative 'report'
 class HTMLReport < Report
   
   def output_start
@@ -27,3 +27,6 @@ class HTMLReport < Report
     puts('</html>')
   end
 end
+
+report = HTMLReport.new
+report.output_report

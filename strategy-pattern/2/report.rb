@@ -1,4 +1,6 @@
-require_relative '2_formatter'
+require_relative 'html_formatter'
+require_relative 'plain_text_formatter'
+
 class Report
 
   attr_reader :title, :text
