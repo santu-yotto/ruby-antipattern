@@ -6,6 +6,7 @@ class Formatter
 end
 
 class HTMLFormatter < Formatter
+  
   def output_report( title, text )
     puts('<html>')
     puts(' <head>')
@@ -20,9 +21,11 @@ class HTMLFormatter < Formatter
     puts(' </body>')
     puts('</html>')
   end
+
 end
 
 class PlainTextFormatter < Formatter
+  
   def output_report(title, text)
     puts("***** #{title} *****")
     
@@ -30,4 +33,5 @@ class PlainTextFormatter < Formatter
       puts(line)
     end
   end
+
 end
